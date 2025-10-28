@@ -1,3 +1,4 @@
+
 # Recipe Ideas
 
 ## Project Overview
@@ -118,3 +119,5 @@ The project can be deployed on platforms like CodeSandbox or StackBlitz for demo
 
 ## Author
 Chandan Gowda
+# Receipe_ideas
+
