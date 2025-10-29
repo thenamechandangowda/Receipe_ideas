@@ -22,7 +22,8 @@ function App() {
     
     try {
       // Use our backend API instead of directly calling TheMealDB
-      const response = await fetch(`http://localhost:5000/api/search?q=${term}`);
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${apiUrl}/api/search?q=${term}`);
       const data = await response.json();
       
       if (data.meals) {
@@ -43,7 +44,8 @@ function App() {
     setLoading(true);
     try {
       // Fetch detailed recipe information from our backend
-      const response = await fetch(`http://localhost:5000/api/recipe/${recipe.idMeal}`);
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const response = await fetch(`${apiUrl}/api/recipe/${recipe.idMeal}`);
       const data = await response.json();
       
       if (data.meals && data.meals[0]) {

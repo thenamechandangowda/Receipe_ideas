@@ -1,0 +1,23 @@
+{
+  "$schema": "https://codesandbox.io/docs/task-schema.json",
+  "tasks": {
+    "dev": {
+      "name": "dev",
+      "command": "npm run dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 5173
+      }
+    },
+    "backend": {
+      "name": "backend",
+      "command": "python app.py",
+      "runAtStart": true,
+      "preview": {
+        "port": 5000
+      }
+    }
+  }
+}
+
+
